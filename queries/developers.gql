@@ -1,0 +1,10 @@
+{
+  softwareName: label @single
+  developer @single(scope: all) {
+    label
+    country(label_en: "France")
+  }
+}
+
+# unde lucreaza software developerii dintr-o anumita tara?
+# check DBpedia 2016-04 dataset also: http://query.linkeddatafragments.org/

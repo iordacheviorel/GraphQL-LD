@@ -1,0 +1,8 @@
+{
+    "type": "module",
+    "dependencies": {
+        "graphql-ld-sparqlendpoint": "^1.0.1",
+        "graphql-to-sparql": "^2.4.0",
+        "xhr2": "^0.2.1"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  label @single
+  director @single(scope: all) {
+    label
+comment
+  }
+  starring(label_en: "Maia Morgenstern")  @single
+}
+
+# run on http://query.linkeddatafragments.org/ for better results
+# datasource: DBPedia 2015-10

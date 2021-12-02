@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "label": "http://www.w3.org/2000/01/rdf-schema#label",
+        "label_en": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "en"
+        },
+        "director": "http://dbpedia.org/ontology/director",
+        "starring": "http://dbpedia.org/ontology/starring",
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        }
+    }
+}

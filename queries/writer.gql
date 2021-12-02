@@ -1,0 +1,9 @@
+{
+  label @single
+  writer(label_en: "Dan Bittman")  @single
+  artist  @single(scope: all) {
+    label
+  }
+}
+
+# use DBpedia 2015-10 datasource on http://query.linkeddatafragments.org/

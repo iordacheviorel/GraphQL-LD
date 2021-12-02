@@ -1,0 +1,10 @@
+{
+  label @single
+  starring(label_en: "Sebastian Stan")  @single
+}
+
+# SELECT ?label ?starring WHERE {
+#   ?df_3_0 <http://www.w3.org/2000/01/rdf-schema#label> ?label;
+#     <http://dbpedia.org/ontology/starring> ?starring.
+#   ?starring <http://www.w3.org/2000/01/rdf-schema#label> "Sebastian Stan"@en.
+# }

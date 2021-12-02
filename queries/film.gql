@@ -1,0 +1,14 @@
+{
+  id
+  ... on Film {
+    starring(label: "Sebastian Stan")
+  }
+}
+
+# SELECT ?id ?starring WHERE {
+#   OPTIONAL {
+#     ?id <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film>;
+#       <http://dbpedia.org/ontology/starring> ?starring.
+#     ?starring <http://www.w3.org/2000/01/rdf-schema#label> "Sebastian Stan"@en.
+#   }
+# }

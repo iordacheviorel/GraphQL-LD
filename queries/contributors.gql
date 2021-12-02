@@ -1,0 +1,12 @@
+{
+  birthPlace(label_en: "Bucharest") @single
+  viafPerson @single(scope: all) {
+    name {
+      nameOf {
+        contributedTo {
+          bookTitle
+        }
+      }
+    }
+  }
+}

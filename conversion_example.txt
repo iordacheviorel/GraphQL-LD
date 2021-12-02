@@ -1,0 +1,13 @@
+//  converting: json-ld context + graphql query -> spaqrl query
+> graphql-to-sparql "contexts/contributors.json" "queries/contributors.gql"
+
+result:
+> SELECT ?birthPlace ?viafPerson_name_nameOf_contributedTo_bookTitle WHERE {
+  ?df_3_0 <http://dbpedia.org/ontology/birthPlace> ?birthPlace.
+  ?birthPlace <http://www.w3.org/2000/01/rdf-schema#label> "Bucharest"@en.
+  ?viafPerson <http://schema.org/sameAs> ?df_3_0;
+    <http://schema.org/name> ?viafPerson_name.
+  ?viafPerson_name_nameOf <http://xmlns.com/foaf/0.1/name> ?viafPerson_name.
+  ?viafPerson_name_nameOf_contributedTo <http://purl.org/dc/terms/contributor> ?viafPerson_name_nameOf;
+    <http://purl.org/dc/terms/title> ?viafPerson_name_nameOf_contributedTo_bookTitle.   
+}

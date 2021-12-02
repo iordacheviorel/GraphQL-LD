@@ -1,0 +1,8 @@
+{
+  label @single
+  director @single(scope: all) {
+    label
+    comment
+  }
+  starring(label_en: "Sebastian Stan")  @single
+}
